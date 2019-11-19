@@ -7,12 +7,12 @@ import StartScreen from './StartScreen';
 
 const Body = () => {
 
-    const {0: playerScore, 1: cpuScore, 2: gameLength} = useContext(GameContext);
+    const {0: playerScore, 1: cpuScore, 2: gameLength, 7: text} = useContext(GameContext);
 
     if ((playerScore < gameLength && cpuScore < gameLength) && gameLength !== 0) {
         return (
             <div id="body">
-                <h2>Make a Move</h2>
+                <h2>{text}</h2>
                 <Rock />
                 <Paper />
                 <Scissor />
