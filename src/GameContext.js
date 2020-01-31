@@ -23,7 +23,7 @@ export const GameProvider = props => {
                     break;
                 case lose:
                     setCpuScore(cpuScore + 1)
-                    setText(`You picked ${e.currentTarget.id}, CPU picked ${cpuChoice}. You lose...`);
+                    setText(`You picked ${e.currentTarget.id}, CPU picked ${cpuChoice}. You lose.`);
                     break;
                 default:
                     setText(`You both picked ${cpuChoice}. It's a draw.`);

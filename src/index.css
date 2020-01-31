@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Tomorrow', sans-serif;
+  height: 100vh;
 
 }
 
@@ -32,9 +33,12 @@ nav {
 }
 
 #body, #start-screen {
-  max-width: 500px;
-  margin: 40px auto;
+  margin: 20px;
   text-align: center;
+}
+
+#start-screen {
+  padding: 30px
 }
 
 #start-screen input {
